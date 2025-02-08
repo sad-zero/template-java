@@ -3,6 +3,7 @@ This repository is designed to the boilerplate for Java Spring projects.
 
 # Project Guidelines
 - [CONTRIBUTING](docs/CONTRIBUTING.md)
+- [INSTALLATION](docs/INSTALLATION.md)
 
 
 # License
