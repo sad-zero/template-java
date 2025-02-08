@@ -35,3 +35,7 @@ You should follow the templates.
 
 ## Pull Request Guide
 You should follow [the template](/.github/PULL_REQUEST_TEMPLATE.md)
+
+## Style Guide
+We use [checkstyle and google guideline](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml). <br/>
+Before sending PRs, please clean updated codes.
