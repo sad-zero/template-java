@@ -6,7 +6,7 @@ This repository is designed to the boilerplate for Java Spring projects.
 - [INSTALLATION](docs/INSTALLATION.md)
 
 ## Project Targets
-- People want to start API server based on Spring boot3 quickly.
+- People want to start API server based on Spring boot3 with JPA and postgresql quickly.
 - People want to force specifications, contracts, and fitness functions.
   - See [Consumer-Driven Contract](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/cdc-testing/)
   - See [API-First Design](https://www.postman.com/api-first/)
@@ -89,6 +89,21 @@ This repository is designed to the boilerplate for Java Spring projects.
 - [src/test/resources/contracts](/src/test/resources/contracts): API's integrational test specifications.
   - See [Spring Contract](https://spring.io/projects/spring-cloud-contract)
 - [src/test/java/love/you/babe/contracts](/src/test/java/love/you/babe/contracts): Contract's base class for setup steps.
+
+### Main dependencies
+> See [details](/build.gradle)
+
+| Name | Description |
+| - | - |
+| [spring-boot-starter-web](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter) | API Server |
+| [spring-boot-starter-data-jpa](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa) | ORM Framework |
+| [spring-cloud-starter-contract-verifier](https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-contract-verifier) | Integration Test Framework |
+| [test container for Java](https://mvnrepository.com/artifact/org.testcontainers/junit-jupiter) | Isolated container |
+| [openapi generator for gradle](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin) | API IF Generator |
+| [docker](https://www.docker.com/) | Container environment |
+| [docker compose](https://docs.docker.com/compose/) | Container stack management |
+| [Postgresql](https://www.postgresql.org/) | Opensource RDB |
+| [Gradle](https://gradle.org/) | Java build tool |
 
 ## Development Senario using this boilerplate.
 1. Write API Specifications in [contracts](/contracts).
