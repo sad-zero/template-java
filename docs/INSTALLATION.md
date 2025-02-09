@@ -41,6 +41,8 @@ If you use colima, podman, or other docker-compatible runtimes, check [this](htt
   - `test/java/{basePackage: love/you/babe}`
   - `*.java`
     - Change packages to yours.
+  - [fitness/LayoutTest.java](/src/test/java/love/you/babe/fitness/LayoutTest.java)
+    - `String basePackage = {basePackage: love.you.babe}`
 
 ## Run
 1. Go to project's root directory.
