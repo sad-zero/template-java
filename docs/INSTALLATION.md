@@ -43,4 +43,6 @@ If you use colima, podman, or other docker-compatible runtimes, check [this](htt
     - Change packages to yours.
 
 ## Run
-> [!todo]
+1. Go to project's root directory.
+2. Run `./gradlew bootBuildImage --imageName={image_name: template-java}`
+3. Run `docker compose up`.
