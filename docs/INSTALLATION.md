@@ -8,10 +8,18 @@ See details at [LICENSE](/LICENSE)
 This document guides how to install and run this project.
 
 ## Environments
-> [!todo]
+| Name      | Version                       |
+| --------- | ----------------------------- |
+| OS        | Linux, Mac(default: Mac)      |
+| Java      | >= 17(default: zulu-17)       |
+| Gradle    | >= 8.12(default: 8.12.1)      |
+| Container | Docker(Default: colima-0.8.1) |
 
 ## Setup
 > [!todo]
+
+### Test container
+If you use colima, podman, or other docker-compatible runtimes, check [this](https://java.testcontainers.org/supported_docker_environment/).
 
 ## Run
 > [!todo]

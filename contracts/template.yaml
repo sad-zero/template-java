@@ -1,0 +1,19 @@
+# Copyright (c) 2025 happy
+# This file can be used by MIT License.
+# See details at [LICENSE](/LICENSE)
+
+openapi: 3.1.0
+info:
+  title: Template API
+  description: API's template
+  version: 0.1.0
+servers:
+  - url: "http://localhost:8080"
+paths:
+  /template:
+    get:
+      summary: Template
+      operationId: get_template
+      responses:
+        200:
+          description: "OK"

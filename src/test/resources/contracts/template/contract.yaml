@@ -1,0 +1,12 @@
+# Copyright (c) 2025 happy
+# This file can be used by MIT License.
+# See details at [LICENSE](/LICENSE)
+---
+description: Get contract(normal)
+request:
+  method: GET
+  url: /template
+  headers:
+    Content-Type: application/json
+response:
+  status: 200

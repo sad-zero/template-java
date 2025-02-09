@@ -1,0 +1,14 @@
+// Copyright (c) 2025 happy
+// This file can be used by MIT License.
+// See details at [LICENSE](/LICENSE)
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.format.settings.url": ".vscode/eclipse-java-google-style.xml",
+    "java.checkstyle.configuration": "${workspaceFolder}/config/checkstyle/checkstyle.xml",
+    "java.checkstyle.version": "10.21.2",
+    "[java]": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false
+    },
+    "java.configuration.updateBuildConfiguration": "interactive",
+}
