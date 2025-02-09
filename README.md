@@ -74,7 +74,20 @@ This repository is designed to the boilerplate for Java Spring projects.
                 └── template
                     └── contract.yaml
 ```
-
+- [.github](/.github): Issue and PR templates.
+- [.vscode](/.vscode): Visual Studio Code settings.
+- [LICENSE](/LICENSE): The project's license.
+- [build.gradle](/build.gradle): Project's build script.
+- [settings.gradle][(/settings.gradle): Project's build script.
+- [config/checkstyle](/config/checkstyle): Project's java style settings.
+  - See [Checkstyle for Java gradle plugin](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)
+- [contracts](/contracts): API Specifications defined by OAS.
+  - See [Open API Specification](https://swagger.io/specification/)
+- [docker-compose.yaml](/docker-compose.yaml): Project's runtime script.
+- [docs](/docs): Project's documents.
+- [src/test/resources/contracts](/src/test/resources/contracts): API's integrational test specifications.
+  - See [Spring Contract](https://spring.io/projects/spring-cloud-contract)
+- [src/test/java/love/you/babe/contracts](/src/test/java/love/you/babe/contracts): Contract's base class for setup steps.
 
 # License
 Copyright (c) 2025 happy <br/>
