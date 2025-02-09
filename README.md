@@ -11,6 +11,7 @@ This repository is designed to the boilerplate for Java Spring projects.
   - See [Consumer-Driven Contract](https://microsoft.github.io/code-with-engineering-playbook/automated-testing/cdc-testing/)
   - See [API-First Design](https://www.postman.com/api-first/)
   - See [Evolutionary Architecture](https://evolutionaryarchitecture.com/)
+- Development cycles based on XP.
 
 ## Project Structures
 ```plaintext
@@ -88,6 +89,17 @@ This repository is designed to the boilerplate for Java Spring projects.
 - [src/test/resources/contracts](/src/test/resources/contracts): API's integrational test specifications.
   - See [Spring Contract](https://spring.io/projects/spring-cloud-contract)
 - [src/test/java/love/you/babe/contracts](/src/test/java/love/you/babe/contracts): Contract's base class for setup steps.
+
+## Development Senario using this boilerplate.
+1. Write API Specifications in [contracts](/contracts).
+2. Run `./gradlew compileJava` to generate API IFs at `build/generated`.
+3. Write API Contracts in [src/test/java/love/you/babe/contracts](/src/test/java/love/you/babe/contracts).
+4. Run `./gradlew contractTest` to check whether integrational tests work.
+5. Develop APIs by implementing generated API IFs.
+6. Run `./gradlew check` to check whether all tests are passed.
+7. Run `./gradlew bootBuildImage --imageName=template-java` to build server's image.
+8. Run `docker compose up` to host the image.
+9. Repeat `step 1-8` again.
 
 # License
 Copyright (c) 2025 happy <br/>
