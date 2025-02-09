@@ -1,0 +1,16 @@
+# Copyright (c) 2025 happy
+# This file can be used by MIT License.
+# See details at [LICENSE](/LICENSE)
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://db:5432/postgres
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql

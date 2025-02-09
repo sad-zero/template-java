@@ -1,0 +1,34 @@
+# Copyright (c) 2025 happy
+# This file can be used by MIT License.
+# See details at [LICENSE](/LICENSE)
+
+
+# See https://docs.docker.com/compose/how-tos/startup-order/
+# https://spring.io/guides/gs/spring-boot-docker
+version: '3.9'
+
+services:
+  service:
+    image: template-java
+    environment:
+      SPRING_PROFILES_ACTIVE: local
+    ports:
+      - 8080:8080
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 10s
+

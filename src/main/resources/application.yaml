@@ -1,0 +1,9 @@
+# Copyright (c) 2025 happy
+# This file can be used by MIT License.
+# See details at [LICENSE](/LICENSE)
+
+spring:
+  application:
+    name: babe
+server:
+  port: 8080
